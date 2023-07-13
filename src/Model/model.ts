@@ -1,0 +1,261 @@
+const client = [
+    {
+        name: "Digital While",
+        logo: "", /* aqui nesta parte, a logo pode ser tanto um link (endereço) ou pode ser um arquivo importado; */
+        team: [
+            {
+                name: "Gabriel W.",
+                occupation: "Developer Full Stack",
+                photo: "https://blog.xpeducacao.com.br/wp-content/uploads/2022/12/desenvolvedor-de-software.jpg"
+            },
+            {
+                name: "Beatriz M.",
+                occupation: "Developer Full Stack",
+                photo: "https://blog.xpeducacao.com.br/wp-content/uploads/2022/12/desenvolvedor-de-software.jpg"
+            },
+            {
+                name: "Amanda C.",
+                occupation: "Developer Full Stack",
+                photo: "https://blog.xpeducacao.com.br/wp-content/uploads/2022/12/desenvolvedor-de-software.jpg"
+            },
+            {
+                name: "Nathalia K.",
+                occupation: "Designer",
+                photo: "https://blog.xpeducacao.com.br/wp-content/uploads/2022/12/desenvolvedor-de-software.jpg"
+            },
+        ],
+        controlPanel: {
+            productEdit: {
+                socialMedia: [
+                    {
+                    name: "Pacote While Light",
+                    img: "",
+                    littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                    price: 123.00,
+                    largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                    blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                    
+                    },
+                    {
+                        name: "Pacote While Light",
+                        img: "",
+                        littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                        price: 123.00,
+                        largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                        blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                        
+                    },
+                    {
+                        name: "Pacote While Light",
+                        img: "",
+                        littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                        price: 123.00,
+                        largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                        blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                        
+                    },
+                ],
+                design: [
+                    {
+                    name: "Pacote While Light",
+                    img: "",
+                    littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                    price: 123.00,
+                    largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                    blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                    
+                    },
+                    {
+                        name: "Pacote While Light",
+                        img: "",
+                        littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                        price: 123.00,
+                        largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                        blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                        
+                    },
+                    {
+                        name: "Pacote While Light",
+                        img: "",
+                        littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                        price: 123.00,
+                        largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                        blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                        
+                    },
+                ],
+                websites: [
+                    {
+                    name: "Pacote While Light",
+                    img: "",
+                    littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                    price: 123.00,
+                    largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                    blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                    
+                    },
+                    {
+                        name: "Pacote While Light",
+                        img: "",
+                        littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                        price: 123.00,
+                        largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                        blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                        
+                    },
+                    {
+                        name: "Pacote While Light",
+                        img: "",
+                        littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                        price: 123.00,
+                        largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                        blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                        
+                    },
+                ],
+                paidTraffic: [
+                    {
+                    name: "Pacote While Light",
+                    img: "",
+                    littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                    price: 123.00,
+                    largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                    blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                    
+                    },
+                    {
+                        name: "Pacote While Light",
+                        img: "",
+                        littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                        price: 123.00,
+                        largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                        blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                        
+                    },
+                    {
+                        name: "Pacote While Light",
+                        img: "",
+                        littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                        price: 123.00,
+                        largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                        blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                        
+                    },
+                ],
+                videoEditing: [
+                    {
+                    name: "Pacote While Light",
+                    img: "",
+                    littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                    price: 123.00,
+                    largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                    blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                    
+                    },
+                    {
+                        name: "Pacote While Light",
+                        img: "",
+                        littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                        price: 123.00,
+                        largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                        blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                        
+                    },
+                    {
+                        name: "Pacote While Light",
+                        img: "",
+                        littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                        price: 123.00,
+                        largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                        blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                        
+                    },
+                ],
+                updates: [
+                    {
+                    name: "Pacote While Light",
+                    img: "",
+                    littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                    price: 123.00,
+                    largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                    blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                    
+                    },
+                    {
+                        name: "Pacote While Light",
+                        img: "",
+                        littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                        price: 123.00,
+                        largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                        blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                        
+                    },
+                    {
+                        name: "Pacote While Light",
+                        img: "",
+                        littleDescription: "descrição pequena do produto (até 150 caracteres)",
+                        price: 123.00,
+                        largeDescription: "grande descrição do produto (sem limitação de caracteres)",
+                        blocked: false,
+                    edited: "2222-22-22 : 22:22:22",
+                    deleted: "1111-11-11 11:11:11"
+                        
+                    },
+                ],
+            },
+            colorAndImageEdit: {
+                colors: {},
+                images: {}
+            },
+            contactEdit: {
+                email: "digitalwhile@gmail.com",
+                whatsapp: 27992044443,
+                instagram: "digitalwhile.ofc"
+            },
+            spaceFeedback: [
+                {
+                    title: "Alguma coisa",
+                    text: "algum feedback",
+                    user: {
+                        name: "nome do corno",
+                        idWebsite: "id do website do corno"
+                    }
+                }
+            ]
+        }
+    }
+]
