@@ -1,13 +1,22 @@
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { Container } from "./style";
+import Dashboard from "./pages/dashboard";
+import Menu from "./pages/menu";
+import Admin from "./pages/admin";
+import ErrorPage from "./pages/error";
 /* import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; */
 
 function App() {
   return (
-    <div className="App">
-      {/* <ToastContainer theme="dark" /> */}
-      <Routes />
-    </div>
+    <Container>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </Container>
   );
 }
 
