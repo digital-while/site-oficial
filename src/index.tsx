@@ -12,8 +12,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    <GlobalStyle />
     <BrowserRouter>
-      <GlobalStyle />
       <App />
       {/* <ToastContainer
           position="top-right"
