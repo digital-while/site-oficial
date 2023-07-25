@@ -1,5 +1,10 @@
+import NavBar from "../../components/navBar";
+
 export default function ErrorPage() {
     return (
-        <h1>ErrorPage</h1>
+        <>
+            <NavBar/>
+            <h1>ErrorPage</h1>
+        </>
     )
 }
