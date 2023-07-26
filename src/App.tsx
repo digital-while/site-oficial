@@ -4,6 +4,7 @@ import Dashboard from "./pages/dashboard";
 import Menu from "./pages/menu";
 import Admin from "./pages/admin";
 import ErrorPage from "./pages/error";
+import "./style.ts"
 /* import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; */
 
