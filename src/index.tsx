@@ -5,18 +5,16 @@ import reportWebVitals from "./reportWebVitals";
 
 import { GlobalStyle } from "./styles/global";
 import { BrowserRouter } from "react-router-dom";
-import UserProvider from "./contexts/userContext.js";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <UserProvider>
-      <GlobalStyle />
-      <BrowserRouter>
-        <App />
-        {/* <ToastContainer
+    <GlobalStyle />
+    <BrowserRouter>
+      <App />
+      {/* <ToastContainer
           position="top-right"
           autoClose={5000}
           hideProgressBar={false}
@@ -27,8 +25,7 @@ root.render(
           draggable
           pauseOnHover
         /> */}
-      </BrowserRouter>
-    </UserProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
