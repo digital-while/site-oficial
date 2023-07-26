@@ -1,5 +1,6 @@
-import logo from "../resource/w.png"
+import logo from "../../assets/w.png"
 import {Link} from "react-router-dom"
+import "./style.css"
 
 export default function NavBar() {
 
