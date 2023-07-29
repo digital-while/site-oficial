@@ -18,7 +18,8 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="/product" element={<ProductPage />} />
+          <Route path="/product" element={<ErrorPage />} />
+          <Route path="/product/:product" element={<ProductPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Container>

@@ -1,12 +1,15 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /* Preciso setar um tamanho fixo na navbar */
+  height: 7vh;
+  min-height: 7vh;
 }
 
-header > img{
-    object-fit: contain;
-    width: 10vw;
-    height: 5vh;
+header > img {
+  object-fit: contain;
+  width: 10vw;
+  height: 5vh;
 }

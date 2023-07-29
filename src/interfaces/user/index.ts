@@ -22,6 +22,7 @@ export interface iControlPanel {
 export interface iProductCategory {
   title: string;
   description: string;
+  urlName: string;
   productList: iProduct[];
 }
 
