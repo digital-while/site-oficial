@@ -1,4 +1,5 @@
 import { iUser } from "../interfaces/user";
+import logo from "../assets/w.png"
 
 // const client = [
 //   {
@@ -287,7 +288,7 @@ import { iUser } from "../interfaces/user";
 
 export const client: iUser = {
   name: "Digital While",
-  logo: "" /* aqui nesta parte, a logo pode ser tanto um link (endereço) ou pode ser um arquivo importado; */,
+  logo: logo /* aqui nesta parte, a logo pode ser tanto um link (endereço) ou pode ser um arquivo importado; */,
   isAdmin: true,
   team: [
     {

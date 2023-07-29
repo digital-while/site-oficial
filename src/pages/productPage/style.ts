@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledProductPage = styled.div`
   /* Height deve ser igual a 100vh - vh da navbar */
-  height: 93vh;
+  height: 90vh;
   width: 100vw;
   display: flex;
   flex-direction: column;

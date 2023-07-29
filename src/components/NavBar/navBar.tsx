@@ -1,19 +1,29 @@
-import logo from "../../assets/w.png"
 import {Link} from "react-router-dom"
-import "./style.css"
+import { UserContext } from "../../contexts/userContext";
+import { useContext } from "react";
+import { StyledHeader } from "../header/style";
+import { StyledNavbar } from "./style";
 
 export default function NavBar() {
-
+    const { userInfo } = useContext(UserContext)
     return (
         <>
-            <header>
-                <img src={logo} alt="logo da empresa" />
-                <nav>
-                    <Link to="/menu">Menu</Link>
-                    <Link to="/admin">Admin</Link>
-                    <Link to="/">Sair</Link>
-                </nav>
-            </header>
+            <StyledHeader>
+                <StyledNavbar>
+                    <img className="logo" src={userInfo.logo} alt="logo da empresa" />
+                    <ul className="boxNavOptions">
+                        <li>
+                            <Link to="/menu">Menu</Link>
+                        </li>
+                        <li>
+                            <Link to="/admin">Admin</Link>
+                        </li>
+                        <li>
+                            <Link to="/">Sair</Link>
+                        </li>
+                    </ul>
+                </StyledNavbar>
+            </StyledHeader>
         </>
 
     )

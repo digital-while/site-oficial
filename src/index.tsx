@@ -5,6 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 
 import { GlobalStyle } from "./styles/global";
 import { BrowserRouter } from "react-router-dom";
+import UserProvider from "./contexts/userContext";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -13,18 +14,20 @@ root.render(
   <React.StrictMode>
     <GlobalStyle />
     <BrowserRouter>
-      <App />
-      {/* <ToastContainer
-          position="top-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        /> */}
+      <UserProvider>
+        <App />
+        {/* <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          /> */}
+      </UserProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
