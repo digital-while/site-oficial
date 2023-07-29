@@ -321,6 +321,7 @@ export const client: iUser = {
       {
         title: "Social Media",
         description: "descrição",
+        urlName: "smedia",
         productList: [
           {
             name: "Pacote While Light",
@@ -330,7 +331,7 @@ export const client: iUser = {
             price: 123.0,
             largeDescription:
               "grande descrição do produto (sem limitação de caracteres)",
-            blocked: false,
+            blocked: true,
             edited: "2222-22-22 : 22:22:22",
             deleted: "1111-11-11 11:11:11",
           },
@@ -363,6 +364,7 @@ export const client: iUser = {
       {
         title: "Design",
         description: "descrição",
+        urlName: "design",
         productList: [
           {
             name: "Pacote While Light",
@@ -405,6 +407,7 @@ export const client: iUser = {
       {
         title: "Websites",
         description: "descrição",
+        urlName: "websites",
         productList: [
           {
             name: "Pacote While Light",
@@ -447,6 +450,7 @@ export const client: iUser = {
       {
         title: "Paid Traffic",
         description: "descrição",
+        urlName: "ptraffic",
         productList: [
           {
             name: "Pacote While Light",
@@ -489,6 +493,7 @@ export const client: iUser = {
       {
         title: "Video Editing",
         description: "descrição",
+        urlName: "vediting",
         productList: [
           {
             name: "Pacote While Light",
