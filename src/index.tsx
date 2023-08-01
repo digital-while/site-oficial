@@ -7,6 +7,8 @@ import { GlobalStyle } from "./styles/global";
 import { BrowserRouter } from "react-router-dom";
 import UserProvider from "./contexts/userContext";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );

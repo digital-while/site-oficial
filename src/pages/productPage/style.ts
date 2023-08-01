@@ -30,4 +30,15 @@ export const StyledProductPage = styled.div`
     justify-content: space-around;
     width: 100%;
   }
+
+  .ul--Carousel {
+    margin-bottom: auto;
+    width: 100%;
+
+    .div--wrapper-itens {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+  }
 `;
