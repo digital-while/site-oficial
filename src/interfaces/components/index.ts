@@ -7,3 +7,9 @@ export interface iProductCardProps {
 export interface iStyledProductCardProps {
   blocked?: boolean;
 }
+
+//Alterar tipagem
+export interface iCustomCarouselProps {
+  itemList?: JSX.Element[];
+  maxItens?: number;
+}

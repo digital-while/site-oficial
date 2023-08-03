@@ -23,22 +23,4 @@ export const StyledProductPage = styled.div`
       font-size: 2.5rem;
     }
   }
-
-  .ul--product {
-    margin-bottom: auto;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-
-  .ul--Carousel {
-    margin-bottom: auto;
-    width: 100%;
-
-    .div--wrapper-itens {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-    }
-  }
 `;
