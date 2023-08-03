@@ -6,6 +6,7 @@ import { UserContext } from "../../contexts/userContext";
 import NavBar from "../../components/NavBar/navBar";
 import { iProductCategory } from "../../interfaces/user";
 import { ProductCard } from "../../components/productCard";
+import { CustomCarousel } from "../../components/carousel";
 
 export const ProductPage = () => {
   const navigate = useNavigate();
@@ -15,19 +16,22 @@ export const ProductPage = () => {
     iProductCategory | undefined
   >();
 
+  //Trocar a Key = index para Key = id
+  const productHtmlList = findProduct?.productList.map((item, index) => (
+    <ProductCard product={item} key={index} />
+  ));
+
+  //Checar se a categoria de produto existe
   useEffect(() => {
     const productClass = userInfo.controlPanel.productEdit.find(
       (productCategory) => productCategory.urlName === product
     );
-
     setFindProduct(productClass);
-
     if (!productClass) {
       navigate("/error");
     }
   }, []);
 
-  //TROCAR A KEY EM ProductCard PELO ID DO PRODUTO
   return (
     <>
       <NavBar />
@@ -37,11 +41,7 @@ export const ProductPage = () => {
             <h1>{findProduct.title}</h1>
             <h2>{findProduct.description}</h2>
           </div>
-          <ul className="ul--product">
-            {findProduct.productList.map((item, index) => (
-              <ProductCard product={item} key={index} />
-            ))}
-          </ul>
+          <CustomCarousel itemList={productHtmlList} />
         </StyledProductPage>
       )}
     </>

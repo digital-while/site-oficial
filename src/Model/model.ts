@@ -1,5 +1,5 @@
 import { iUser } from "../interfaces/user";
-import logo from "../assets/w.png"
+import logo from "../assets/w.png";
 
 // const client = [
 //   {
@@ -349,6 +349,18 @@ export const client: iUser = {
           },
           {
             name: "Pacote While Light",
+            img: "",
+            littleDescription:
+              "descrição pequena do produto (até 150 caracteres)",
+            price: 123.0,
+            largeDescription:
+              "grande descrição do produto (sem limitação de caracteres)",
+            blocked: false,
+            edited: "2222-22-22 : 22:22:22",
+            deleted: "1111-11-11 11:11:11",
+          },
+          {
+            name: "Pacote While Light 4",
             img: "",
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",

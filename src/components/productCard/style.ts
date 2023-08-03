@@ -1,7 +1,9 @@
 import styled, { css } from "styled-components";
 import { iStyledProductCardProps } from "../../interfaces/components";
 
-export const StyledProductCard = styled.li<iStyledProductCardProps>`
+export const StyledProductCard = styled.div<iStyledProductCardProps>`
+  border: 1px solid black;
+
   ${
     //Caso seja um produto bloqueado
     ({ blocked }) =>
