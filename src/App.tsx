@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Container } from "./style";
+import { BodyBack, Container } from "./style";
 import Dashboard from "./pages/dashboard";
 import Menu from "./pages/menu";
 import Admin from "./pages/admin";
@@ -14,14 +14,16 @@ function App() {
   return (
     <UserProvider>
       <Container>
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/product" element={<ErrorPage />} />
-          <Route path="/product/:product" element={<ProductPage />} />
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
+        <BodyBack>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/product" element={<ErrorPage />} />
+            <Route path="/product/:product" element={<ProductPage />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+        </BodyBack>
       </Container>
     </UserProvider>
   );
