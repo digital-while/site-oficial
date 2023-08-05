@@ -4,7 +4,9 @@ export default function Admin() {
     return (
         <>
             <NavBar/>
-            <h1>Admin</h1>
+            <main>
+                <h1>Admin</h1>
+            </main>
         </>
     )
 }

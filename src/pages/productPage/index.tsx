@@ -30,7 +30,7 @@ export const ProductPage = () => {
     if (!productClass) {
       navigate("/error");
     }
-  }, []);
+  }, [product]);
 
   return (
     <>
