@@ -18,6 +18,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import SelectComponent from "../select";
 
 interface Props {
     /**
@@ -94,7 +95,7 @@ export default function NavBar(props: Props) {
                         <Link className="option-nav" to="/menu">Sobre nós</Link>
                     </li>
                     <li className="container-desktop">
-                        <Link className="option-nav" to="/admin">Serviços</Link>
+                        <SelectComponent/>
                     </li>
                     <li className="container-desktop">
                         <Link className="option-nav" to="/">Contatos</Link>
@@ -122,6 +123,9 @@ export default function NavBar(props: Props) {
             >
             {drawer}
             </Drawer>
+        </Box>
+        <Box component="main">
+            <Toolbar />
         </Box>
         </Box>
         
