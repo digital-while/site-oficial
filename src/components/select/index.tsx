@@ -26,23 +26,21 @@ export default function SelectComponent() {
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             value=""
-            label="Produto"
+            /* required=true */
             onChange={handleChange}
             >
-                {userInfo.controlPanel.productEdit.map((productCategory, index) => {
-                    if (product != productCategory.urlName) {
-                    return (
-                        <>
-                        <MenuItem
-                        key={index}
-                        value={`product/${productCategory.urlName}`}
-                        >
-                        {productCategory.title}
-                        </MenuItem>
-                        </>
-                    );
-                    }
-                })}
+            {userInfo.controlPanel.productEdit.map((productCategory, index) => {
+                if (product != productCategory.urlName) {
+                return (
+                    <MenuItem
+                    key={index}
+                    value={`product/${productCategory.urlName}`}
+                    >
+                    {productCategory.title}
+                    </MenuItem>
+                );
+                }
+            })}
             </Select>
         </FormControl>
         </Box>
