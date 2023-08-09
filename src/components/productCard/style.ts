@@ -15,22 +15,45 @@ export const StyledProductCard = styled.div<iStyledProductCardProps>`
 
   height: 50vh;
   width: 25%;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  .div--img {
-    height: 50%;
+  //ALTERAR HOVER APÓS BIBLIOTECA DE FLIPAR O CARD
+  &:hover {
+    .card--front {
+      display: none;
+    }
 
-    img {
-      /* ALTERAR PARA ENCAIXAR A IMAGEM */
-      height: 100%;
+    .card--back {
+      display: flex;
     }
   }
 
-  .div--text {
-    height: 50%;
+  > div {
+    height: 100%;
+  }
+
+  .card--front {
+    .div--img {
+      height: 50%;
+
+      img {
+        /* ALTERAR PARA ENCAIXAR A IMAGEM */
+        height: 100%;
+      }
+    }
+
+    .div--text {
+      height: 50%;
+      padding: 1rem;
+    }
+  }
+
+  .card--back {
+    display: none;
     padding: 1rem;
+    height: 100%;
+    align-items: center;
   }
 `;
