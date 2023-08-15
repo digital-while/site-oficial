@@ -1,12 +1,12 @@
-import NavBar from "../../components/NavBar/navBar";
+import NavBar from "../../components/menu";
 
 export default function Admin() {
-    return (
-        <>
-            <NavBar/>
-            <main>
-                <h1>Admin</h1>
-            </main>
-        </>
-    )
+  return (
+    <>
+      <NavBar />
+      <main>
+        <h1>Admin</h1>
+      </main>
+    </>
+  );
 }
