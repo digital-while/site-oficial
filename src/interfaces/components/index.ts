@@ -5,7 +5,8 @@ export interface iProductCardProps {
 }
 
 export interface iStyledProductCardProps {
-  blocked?: boolean;
+  blocked: boolean;
+  backview: boolean;
 }
 
 //Alterar tipagem

@@ -1,5 +1,6 @@
 import { iUser } from "../interfaces/user";
 import logo from "../assets/w.png";
+import imgSf from "../assets/semimg.png"
 
 // const client = [
 //   {
@@ -37,7 +38,7 @@ import logo from "../assets/w.png";
 //         socialMedia: [
 //           {
 //             name: "Pacote While Light",
-//             img: "",
+//             img: imgSf,
 //             littleDescription:
 //               "descrição pequena do produto (até 150 caracteres)",
 //             price: 123.0,
@@ -49,7 +50,7 @@ import logo from "../assets/w.png";
 //           },
 //           {
 //             name: "Pacote While Light",
-//             img: "",
+//             img: imgSf,
 //             littleDescription:
 //               "descrição pequena do produto (até 150 caracteres)",
 //             price: 123.0,
@@ -61,7 +62,7 @@ import logo from "../assets/w.png";
 //           },
 //           {
 //             name: "Pacote While Light",
-//             img: "",
+//             img: imgSf,
 //             littleDescription:
 //               "descrição pequena do produto (até 150 caracteres)",
 //             price: 123.0,
@@ -325,7 +326,7 @@ export const client: iUser = {
         productList: [
           {
             name: "Pacote While Light",
-            img: "",
+            img: imgSf,
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -337,7 +338,7 @@ export const client: iUser = {
           },
           {
             name: "Pacote While Light",
-            img: "",
+            img: imgSf,
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -349,7 +350,7 @@ export const client: iUser = {
           },
           {
             name: "Pacote While Light",
-            img: "",
+            img: imgSf,
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -361,7 +362,7 @@ export const client: iUser = {
           },
           {
             name: "Pacote While Light 4",
-            img: "",
+            img: imgSf,
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -380,7 +381,7 @@ export const client: iUser = {
         productList: [
           {
             name: "Pacote While Light",
-            img: "",
+            img: imgSf,
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -392,7 +393,7 @@ export const client: iUser = {
           },
           {
             name: "Pacote While Light",
-            img: "",
+            img: imgSf,
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -404,7 +405,7 @@ export const client: iUser = {
           },
           {
             name: "Pacote While Light",
-            img: "",
+            img: imgSf,
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -423,7 +424,7 @@ export const client: iUser = {
         productList: [
           {
             name: "Pacote While Light",
-            img: "",
+            img: imgSf,
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -435,7 +436,7 @@ export const client: iUser = {
           },
           {
             name: "Pacote While Light",
-            img: "",
+            img: imgSf,
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -447,7 +448,7 @@ export const client: iUser = {
           },
           {
             name: "Pacote While Light",
-            img: "",
+            img: imgSf,
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -466,7 +467,7 @@ export const client: iUser = {
         productList: [
           {
             name: "Pacote While Light",
-            img: "",
+            img: imgSf,
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -478,7 +479,7 @@ export const client: iUser = {
           },
           {
             name: "Pacote While Light",
-            img: "",
+            img: imgSf,
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -490,7 +491,7 @@ export const client: iUser = {
           },
           {
             name: "Pacote While Light",
-            img: "",
+            img: imgSf,
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -509,7 +510,7 @@ export const client: iUser = {
         productList: [
           {
             name: "Pacote While Light",
-            img: "",
+            img: imgSf,
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -521,7 +522,7 @@ export const client: iUser = {
           },
           {
             name: "Pacote While Light",
-            img: "",
+            img: imgSf,
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -533,7 +534,7 @@ export const client: iUser = {
           },
           {
             name: "Pacote While Light",
-            img: "",
+            img: imgSf,
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,

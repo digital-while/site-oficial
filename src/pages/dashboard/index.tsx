@@ -1,7 +1,9 @@
-import Navbar from "../../components/menu";
+import NavBar from "../../components/menu";
 
 export default function Dashboard() {
-    return (
-        <><Navbar /></>
-    )
+  return (
+    <>
+      <NavBar />
+    </>
+  );
 }
