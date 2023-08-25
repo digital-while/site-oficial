@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
+  position: absolute;
+  z-index: 1;
 `;
 
 export const Wrapper = styled.div`
@@ -41,8 +43,9 @@ export const Menu = styled("ul")<{open: boolean}>`
 
   @media screen and (max-width: 960px) {
     background-image: linear-gradient(black,#050A30);
-    position: absolute;
+    position: fixed;
     top: 0;
+    bottom: 0;
     left: ${({ open }) => (open ? "0" : "-100%")}; //Import
     width: 100%;
     height: 100%;

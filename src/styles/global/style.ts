@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
     * {
         transition: all 300ms ease-in-out;
         font-family: 'Montserrat', sans-serif;
-        font-family: 'Bebas Neue', sans-serif;
+        /*font-family: 'Bebas Neue', sans-serif;*/
         list-style: none;
     }
 
@@ -24,14 +24,16 @@ const GlobalStyle = createGlobalStyle`
 
         /* Random Colors */
         --red: #FF0000;
-    
 
         /*Typography */
-        --heading1-size: ;
-        --heading2-size: ;
-        --heading3-size: ;
+        --heading1-size: 56px ;
+        --heading2-size: 48px ;
+        --heading3-size: 40px ;
+        --heading4-size: 36px ;
+        --heading5-size: 28px ;
+        --heading6-size: 20px ;
 
-        --body1-size: ;
+        --body1-size: 16px ;
 
         --button-big-text-size: ;
         --button-medium-text-size: ;
@@ -40,9 +42,36 @@ const GlobalStyle = createGlobalStyle`
         --input-label-size: ;
     }
 
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+
+    ol, ul{
+        list-style: none;
+        padding-left: 0;
+    }
+
+    blockquote, q {
+        quotes: none;
+    }
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
     body {
         background: var();
         color: var();
+        font-family: 'Montserrat', sans-serif;
+        font-size: var(--body1-size);
     }
 
     a {
@@ -51,35 +80,67 @@ const GlobalStyle = createGlobalStyle`
 
     /* Text Classes */
     .white {
-        color: ;
     }
+
     /* -- HEADING */
     h1, h2, h3, h4, h5, h6 {
-        color: var();
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h1, .h1 {
+        font-size: var(--heading1-size);
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    h2, .h2 {
+        font-size: var(--heading2-size);
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    h3, .h3 {
+        font-size: var(--heading3-size);
+        font-weight: bold;
+    }
+
+    h4, .h4 {
+        font-size: var(--heading4-size);
+    }
+
+    h5, .h5 {
+        font-size: var(--heading5-size);
+    }
+
+    h6, .h6 {
+        font-size: var(--heading6-size);
+        font-weight: 400;
     }
 
     .text-center {
         text-align: center;
     }
-        }
-    }
-
    
 
     /* Buttons Classes */
     .btn {
         outline: none;
-        padding: 24px 28px;
-        border-radius: ;
-        font-weight: ;
-        font-size: var();
-        display: block;
+        padding: 12px 40px;
+        border-radius: 56px;
+        font-weight: bold;
         text-align: center;
-        line-height: 0px;
         cursor: pointer;
         text-decoration: none;
         transition: all 300ms ease-in-out;
+    }
 
+    .btn-blue {
+        background-color: var(--blue0);
+
+        &:hover {
+            background-color: var(--blue2);
+        }
+    }
 
     input, textarea {
         border: 1px solid var();
@@ -118,6 +179,22 @@ const GlobalStyle = createGlobalStyle`
 
     .w-100 {
         width: 100%;
+    }
+
+    .mb-8 {
+        margin-bottom: 8px;
+    }
+
+    .mb-16 {
+        margin-bottom: 16px;
+    }
+
+    .mb-24 {
+        margin-bottom: 24px;
+    }
+
+    .mb-36 {
+        margin-bottom: 36px;
     }
 `;
 

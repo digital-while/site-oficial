@@ -7,25 +7,30 @@ import ErrorPage from "./pages/error";
 import { ProductPage } from "./pages/productPage";
 import "./style.ts";
 import UserProvider from "./contexts/userContext";
+
+import GlobalStyle from "./styles/global/style";
 /* import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; */
 
 function App() {
   return (
-    <UserProvider>
-      <Container>
-        <BodyBack>
-          <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/menu" element={<Menu />} />
-            <Route path="/admin" element={<Admin />} />
-            <Route path="/product" element={<ErrorPage />} />
-            <Route path="/product/:product" element={<ProductPage />} />
-            <Route path="*" element={<ErrorPage />} />
-          </Routes>
-        </BodyBack>
-      </Container>
-    </UserProvider>
+    <>
+      <GlobalStyle />
+      <UserProvider>
+        <Container>
+          <BodyBack>
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/menu" element={<Menu />} />
+              <Route path="/admin" element={<Admin />} />
+              <Route path="/product" element={<ErrorPage />} />
+              <Route path="/product/:product" element={<ProductPage />} />
+              <Route path="*" element={<ErrorPage />} />
+            </Routes>
+          </BodyBack>
+        </Container>
+      </UserProvider>
+    </>
   );
 }
 
