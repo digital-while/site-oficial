@@ -10,6 +10,9 @@ const GlobalStyle = createGlobalStyle`
 
     :root {
 
+        /*container centralized*/
+        --container: 1300px;
+
         /* Blue Scale */
         --blue0: #191970;
         --blue1: #000080;
@@ -78,6 +81,23 @@ const GlobalStyle = createGlobalStyle`
         cursor: pointer;
     }
 
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    em, .em {
+        font-size: 12px;
+    }
+
+    /* Content Centralized*/
+    .container {
+        max-width: var(--container);
+        margin: 0 auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     /* Text Classes */
     .white {
     }
@@ -120,7 +140,10 @@ const GlobalStyle = createGlobalStyle`
     .text-center {
         text-align: center;
     }
-   
+
+    .bold {
+        font-weight: bold;
+    }
 
     /* Buttons Classes */
     .btn {

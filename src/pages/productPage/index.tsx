@@ -36,11 +36,9 @@ export const ProductPage = () => {
     <>
       <NavBar />
       {findProduct && (
-        <StyledProductPage>
-          <div className="div--presentation">
-            <h1>{findProduct.title}</h1>
-            <h2>{findProduct.description}</h2>
-          </div>
+        <StyledProductPage className="container">
+            <h2>{findProduct.title}</h2>
+            <p className="h6">{findProduct.description}</p>
           <CustomCarousel itemList={productHtmlList} />
         </StyledProductPage>
       )}

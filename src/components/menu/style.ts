@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
   padding-right: 24px;
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled.a`
   display: flex;
   align-items: center;
   position: relative;

@@ -2,70 +2,76 @@ import styled, { css } from "styled-components";
 import { iStyledProductCardProps } from "../../interfaces/components";
 
 export const StyledProductCard = styled.div<iStyledProductCardProps>`
-  height: 50vh;
-  width: 25%;
+  height: 100%;
+  /*width: 25%;*/
 
-  .card--inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
     position: relative;
-    height: 100%;
     width: 100%;
-    transition: transform 0.8s;
+    height: 100%;
+    transition: transform 0.6s;
     transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
-    border: 1px solid black;
     ${
       //Caso seja um produto bloqueado
       ({ blocked }) =>
         blocked &&
         css`
           border: 1px solid red;
+          .flip-card-front, .flip-card-back {
+            opacity: 0.4;
+          }
         `
     }
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #111;
 
-    > div {
-      position: absolute;
+    img {
       width: 100%;
       height: 100%;
-      backface-visibility: hidden;
-    }
-  }
-
-  ${
-    //Animação para flipar o card
-    ({ backview }) =>
-      backview &&
-      css`
-        .card--inner {
-          transform: rotateY(180deg);
-        }
-      `
-  }
-
-  .card--front {
-    .div--img {
-      height: 50%;
-      width: 100%;
-      img {
-        /* ALTERAR PARA ENCAIXAR A IMAGEM */
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
+      object-fit: cover;
+      opacity: 0.3;
     }
 
-    .div--text {
-      height: 50%;
-      padding: 1rem;
+    .flip-card-desc {
+      padding: 16px;
+      position: absolute;
+      bottom: 0;
     }
   }
-
-  .card--back {
+  
+  .flip-card-back {
+    background-color: #111;
+    color: white;
     transform: rotateY(180deg);
-    padding: 1rem;
+    display: flex;
     height: 100%;
+    width: 100%;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 16px;
   }
 `;

@@ -33,7 +33,7 @@ const NavBar = () => {
     <>
       <Container>
         <Wrapper>
-          <LogoContainer>
+          <LogoContainer href="/">
             <img className="logo" src={userInfo.logo} alt="logo da empresa" />
           </LogoContainer>
 
