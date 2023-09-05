@@ -34,7 +34,7 @@ export const LogoContainer = styled.a`
   }
 `;
 
-export const Menu = styled("ul")<{open: boolean}>`
+export const Menu = styled("ul")<{ open: boolean }>`
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -42,7 +42,7 @@ export const Menu = styled("ul")<{open: boolean}>`
   gap: 4px;
 
   @media screen and (max-width: 960px) {
-    background-image: linear-gradient(black,#050A30);
+    background-image: linear-gradient(black, #050a30);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -56,8 +56,7 @@ export const Menu = styled("ul")<{open: boolean}>`
   }
 `;
 
-export const SubMenu = styled("ul")<{open: boolean}>`
-
+export const SubMenu = styled("ul")<{ open: boolean }>`
   display: ${({ open }) => (open ? "block" : "none")};
 
   @media screen and (min-width: 960px) {
