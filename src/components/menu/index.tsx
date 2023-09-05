@@ -60,7 +60,7 @@ const NavBar = () => {
               <SubMenu open={isMenuSubMenu}>
                 {userInfo.controlPanel.productEdit.map((product, index) => {
                   return (
-                    <MenuItem>
+                    <MenuItem key={index}>
                       <MenuItemLink
                         onClick={() => setShowMobileMenu(!showMobileMenu)}
                         href={`/product/${product.urlName}`}

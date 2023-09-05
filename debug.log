@@ -17,3 +17,6 @@
 [0816/140015.586:ERROR:check.cc(222)] Check failed: false. 
 [0816/221715.985:ERROR:check.cc(222)] Check failed: false. 
 [0817/195823.648:ERROR:check.cc(222)] Check failed: false. 
+[0905/110234.913:ERROR:check.cc(290)] Check failed: false. NOTREACHED log messages are omitted in official builds. Sorry!
+[0905/110844.995:ERROR:check.cc(290)] Check failed: false. NOTREACHED log messages are omitted in official builds. Sorry!
+[0905/115710.375:ERROR:check.cc(290)] Check failed: false. NOTREACHED log messages are omitted in official builds. Sorry!
