@@ -29,14 +29,14 @@ const GlobalStyle = createGlobalStyle`
         --red: #FF0000;
 
         /*Typography */
-        --heading1-size: 56px ;
-        --heading2-size: 48px ;
-        --heading3-size: 40px ;
-        --heading4-size: 36px ;
-        --heading5-size: 28px ;
-        --heading6-size: 20px ;
+        --heading1-size: 3.5rem ;
+        --heading2-size: 3rem ;
+        --heading3-size: 2.5rem ;
+        --heading4-size: 2.25rem ;
+        --heading5-size: 1.75rem ;
+        --heading6-size: 1.25rem ;
 
-        --body1-size: 16px ;
+        --body1-size: 1rem ;
 
         --button-big-text-size: ;
         --button-medium-text-size: ;
