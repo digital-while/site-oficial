@@ -4,6 +4,7 @@ import Dashboard from "./pages/dashboard";
 import Menu from "./pages/menu";
 import Admin from "./pages/admin";
 import ErrorPage from "./pages/error";
+import Contact from "./pages/contact";
 import { ProductPage } from "./pages/productPage";
 import "./style.ts";
 import UserProvider from "./contexts/userContext";
@@ -23,6 +24,7 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/menu" element={<Menu />} />
               <Route path="/admin" element={<Admin />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/product" element={<ErrorPage />} />
               <Route path="/product/:product" element={<ProductPage />} />
               <Route path="*" element={<ErrorPage />} />

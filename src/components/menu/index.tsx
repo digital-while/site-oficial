@@ -75,7 +75,7 @@ const NavBar = () => {
             <MenuItem>
               <MenuItemLink
                 onClick={() => setShowMobileMenu(!showMobileMenu)}
-                href="/"
+                href="/contact"
               >
                 Contatos
               </MenuItemLink>
