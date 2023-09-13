@@ -12,3 +12,15 @@
 [0803/134040.087:ERROR:check.cc(222)] Check failed: false. 
 [0803/142655.092:ERROR:check.cc(222)] Check failed: false. 
 [0803/151841.535:ERROR:check.cc(222)] Check failed: false. 
+[0804/220109.317:ERROR:check.cc(222)] Check failed: false. 
+[0809/150149.799:ERROR:check.cc(222)] Check failed: false. 
+[0816/140015.586:ERROR:check.cc(222)] Check failed: false. 
+[0816/221715.985:ERROR:check.cc(222)] Check failed: false. 
+[0817/195823.648:ERROR:check.cc(222)] Check failed: false. 
+[0905/110234.913:ERROR:check.cc(290)] Check failed: false. NOTREACHED log messages are omitted in official builds. Sorry!
+[0905/110844.995:ERROR:check.cc(290)] Check failed: false. NOTREACHED log messages are omitted in official builds. Sorry!
+[0905/115710.375:ERROR:check.cc(290)] Check failed: false. NOTREACHED log messages are omitted in official builds. Sorry!
+[0906/120316.331:ERROR:check.cc(290)] Check failed: false. NOTREACHED log messages are omitted in official builds. Sorry!
+[0910/124949.288:ERROR:check.cc(290)] Check failed: false. NOTREACHED log messages are omitted in official builds. Sorry!
+[0911/150821.999:ERROR:check.cc(290)] Check failed: false. NOTREACHED log messages are omitted in official builds. Sorry!
+[0911/151629.512:ERROR:check.cc(290)] Check failed: false. NOTREACHED log messages are omitted in official builds. Sorry!

@@ -2,35 +2,76 @@ import styled, { css } from "styled-components";
 import { iStyledProductCardProps } from "../../interfaces/components";
 
 export const StyledProductCard = styled.div<iStyledProductCardProps>`
-  border: 1px solid black;
+  height: 100%;
+  /*width: 25%;*/
 
-  ${
-    //Caso seja um produto bloqueado
-    ({ blocked }) =>
-      blocked &&
-      css`
-        border: 1px solid red;
-      `
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
   }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
-  height: 50vh;
-  width: 25%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  .div--img {
-    height: 50%;
-
-    img {
-      /* ALTERAR PARA ENCAIXAR A IMAGEM */
-      height: 100%;
+    ${
+      //Caso seja um produto bloqueado
+      ({ blocked }) =>
+        blocked &&
+        css`
+          border: 1px solid red;
+          .flip-card-front, .flip-card-back {
+            opacity: 0.4;
+          }
+        `
     }
   }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #111;
 
-  .div--text {
-    height: 50%;
-    padding: 1rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.3;
+    }
+
+    .flip-card-desc {
+      padding: 16px;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  
+  .flip-card-back {
+    background-color: #111;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
   }
 `;
