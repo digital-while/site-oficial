@@ -1,291 +1,8 @@
 import { iUser } from "../interfaces/user";
 import logo from "../assets/w.png";
+import mandim from "../assets/dev-mandim.jpg";
+import gabriel from "../assets/dev-gabriel.jpg";
 import imgSf from "../assets/semimg.png"
-
-// const client = [
-//   {
-//     name: "Digital While",
-//     logo: "" /* aqui nesta parte, a logo pode ser tanto um link (endereço) ou pode ser um arquivo importado; */,
-//     isAdmin: true,
-//     team: [
-//       {
-//         name: "Gabriel W.",
-//         occupation: "Developer Full Stack",
-//         photo:
-//           "https://blog.xpeducacao.com.br/wp-content/uploads/2022/12/desenvolvedor-de-software.jpg",
-//       },
-//       {
-//         name: "Beatriz M.",
-//         occupation: "Developer Full Stack",
-//         photo:
-//           "https://blog.xpeducacao.com.br/wp-content/uploads/2022/12/desenvolvedor-de-software.jpg",
-//       },
-//       {
-//         name: "Amanda C.",
-//         occupation: "Developer Full Stack",
-//         photo:
-//           "https://blog.xpeducacao.com.br/wp-content/uploads/2022/12/desenvolvedor-de-software.jpg",
-//       },
-//       {
-//         name: "Nathalia K.",
-//         occupation: "Designer",
-//         photo:
-//           "https://blog.xpeducacao.com.br/wp-content/uploads/2022/12/desenvolvedor-de-software.jpg",
-//       },
-//     ],
-//     controlPanel: {
-//       productEdit: {
-//         socialMedia: [
-//           {
-//             name: "Pacote While Light",
-//             img: imgSf,
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//           {
-//             name: "Pacote While Light",
-//             img: imgSf,
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//           {
-//             name: "Pacote While Light",
-//             img: imgSf,
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//         ],
-//         design: [
-//           {
-//             name: "Pacote While Light",
-//             img: "",
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//           {
-//             name: "Pacote While Light",
-//             img: "",
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//           {
-//             name: "Pacote While Light",
-//             img: "",
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//         ],
-//         websites: [
-//           {
-//             name: "Pacote While Light",
-//             img: "",
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//           {
-//             name: "Pacote While Light",
-//             img: "",
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//           {
-//             name: "Pacote While Light",
-//             img: "",
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//         ],
-//         paidTraffic: [
-//           {
-//             name: "Pacote While Light",
-//             img: "",
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//           {
-//             name: "Pacote While Light",
-//             img: "",
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//           {
-//             name: "Pacote While Light",
-//             img: "",
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//         ],
-//         videoEditing: [
-//           {
-//             name: "Pacote While Light",
-//             img: "",
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//           {
-//             name: "Pacote While Light",
-//             img: "",
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//           {
-//             name: "Pacote While Light",
-//             img: "",
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//         ],
-//         updates: [
-//           {
-//             name: "Pacote While Light",
-//             img: "",
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//           {
-//             name: "Pacote While Light",
-//             img: "",
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//           {
-//             name: "Pacote While Light",
-//             img: "",
-//             littleDescription:
-//               "descrição pequena do produto (até 150 caracteres)",
-//             price: 123.0,
-//             largeDescription:
-//               "grande descrição do produto (sem limitação de caracteres)",
-//             blocked: false,
-//             edited: "2222-22-22 : 22:22:22",
-//             deleted: "1111-11-11 11:11:11",
-//           },
-//         ],
-//       },
-//       colorAndImageEdit: {
-//         colors: {},
-//         images: {},
-//       },
-//       contactEdit: {
-//         email: "digitalwhile@gmail.com",
-//         whatsapp: 27992044443,
-//         instagram: "digitalwhile.ofc",
-//       },
-//       spaceFeedback: [
-//         {
-//           title: "Alguma coisa",
-//           text: "algum feedback",
-//           user: {
-//             name: "nome do corno",
-//             idWebsite: "id do website do corno",
-//           },
-//         },
-//       ],
-//     },
-//   },
-// ];
 
 export const client: iUser = {
   name: "Digital While",
@@ -294,19 +11,19 @@ export const client: iUser = {
   team: [
     {
       name: "Gabriel W.",
-      occupation: "Developer Full Stack",
+      occupation: "Desenvolvedor Full Stack",
       photo:
-        "https://blog.xpeducacao.com.br/wp-content/uploads/2022/12/desenvolvedor-de-software.jpg",
+        gabriel,
     },
     {
       name: "Beatriz M.",
-      occupation: "Developer Full Stack",
+      occupation: "Desenvolvedora Full Stack e CEO",
       photo:
-        "https://blog.xpeducacao.com.br/wp-content/uploads/2022/12/desenvolvedor-de-software.jpg",
+        mandim,
     },
     {
       name: "Amanda C.",
-      occupation: "Developer Full Stack",
+      occupation: "Desenvolvedora Full Stack",
       photo:
         "https://blog.xpeducacao.com.br/wp-content/uploads/2022/12/desenvolvedor-de-software.jpg",
     },
@@ -320,68 +37,13 @@ export const client: iUser = {
   controlPanel: {
     productEdit: [
       {
-        title: "Social Media",
-        description: "descrição",
-        urlName: "smedia",
-        productList: [
-          {
-            name: "Pacote While Light",
-            img: imgSf,
-            littleDescription:
-              "descrição pequena do produto (até 150 caracteres)",
-            price: 123.0,
-            largeDescription:
-              "grande descrição do produto (sem limitação de caracteres)",
-            blocked: true,
-            edited: "2222-22-22 : 22:22:22",
-            deleted: "1111-11-11 11:11:11",
-          },
-          {
-            name: "Pacote While Light",
-            img: imgSf,
-            littleDescription:
-              "descrição pequena do produto (até 150 caracteres)",
-            price: 123.0,
-            largeDescription:
-              "grande descrição do produto (sem limitação de caracteres)",
-            blocked: false,
-            edited: "2222-22-22 : 22:22:22",
-            deleted: "1111-11-11 11:11:11",
-          },
-          {
-            name: "Pacote While Light",
-            img: imgSf,
-            littleDescription:
-              "descrição pequena do produto (até 150 caracteres)",
-            price: 123.0,
-            largeDescription:
-              "grande descrição do produto (sem limitação de caracteres)",
-            blocked: false,
-            edited: "2222-22-22 : 22:22:22",
-            deleted: "1111-11-11 11:11:11",
-          },
-          {
-            name: "Pacote While Light 4",
-            img: imgSf,
-            littleDescription:
-              "descrição pequena do produto (até 150 caracteres)",
-            price: 123.0,
-            largeDescription:
-              "grande descrição do produto (sem limitação de caracteres)",
-            blocked: false,
-            edited: "2222-22-22 : 22:22:22",
-            deleted: "1111-11-11 11:11:11",
-          },
-        ],
-      },
-      {
         title: "Design",
-        description: "descrição",
+        description: "Aproveite nossos serviços de design, crie logos (provisórias ou definitivas), destaques, artes para impressão e divulgação!",
         urlName: "design",
         productList: [
           {
-            name: "Pacote While Light",
-            img: imgSf,
+            name: "Design para Sites",
+            img: 'https://s.tmimgcdn.com/scr/400x250/248100/modelo-de-design-de-site-de-consultor-gratuito_248126-original.jpg',
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -392,8 +54,8 @@ export const client: iUser = {
             deleted: "1111-11-11 11:11:11",
           },
           {
-            name: "Pacote While Light",
-            img: imgSf,
+            name: "Logo Provisória",
+            img: 'https://img.freepik.com/vetores-gratis/conjunto-de-design-de-marca-do-logotipo-azul_53876-97528.jpg',
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -404,8 +66,56 @@ export const client: iUser = {
             deleted: "1111-11-11 11:11:11",
           },
           {
-            name: "Pacote While Light",
-            img: imgSf,
+            name: "Logo Definitiva",
+            img: 'https://1000marcas.net/wp-content/uploads/2022/07/Los-logotipos-mas-famosos-en-azul.png',
+            littleDescription:
+              "descrição pequena do produto (até 150 caracteres)",
+            price: 123.0,
+            largeDescription:
+              "grande descrição do produto (sem limitação de caracteres)",
+            blocked: false,
+            edited: "2222-22-22 : 22:22:22",
+            deleted: "1111-11-11 11:11:11",
+          },
+          {
+            name: "Publicações",
+            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-w7oVvYRYrcCGE7Jq6T5kD7X8jJvHsPHw7LNy60z1oVUKVoUTpCgVGRP6EO2v-SJZUFw&usqp=CAU',
+            littleDescription:
+              "descrição pequena do produto (até 150 caracteres)",
+            price: 123.0,
+            largeDescription:
+              "grande descrição do produto (sem limitação de caracteres)",
+            blocked: false,
+            edited: "2222-22-22 : 22:22:22",
+            deleted: "1111-11-11 11:11:11",
+          },
+          {
+            name: "Destaques",
+            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIPGO4Tay_O7W-IWIHrKSOMikZKfbkUWVsl71DWSfizKugXSKcQwckcwUooZpDBLXTjhE&usqp=CAU',
+            littleDescription:
+              "descrição pequena do produto (até 150 caracteres)",
+            price: 123.0,
+            largeDescription:
+              "grande descrição do produto (sem limitação de caracteres)",
+            blocked: false,
+            edited: "2222-22-22 : 22:22:22",
+            deleted: "1111-11-11 11:11:11",
+          },
+          {
+            name: "Stories",
+            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoVVxbOxxHU2QVs2Qxvwww52evBAv29fKXTj3adsOqBQa_R6aek8_0AOrQmnLiOplxncU&usqp=CAU',
+            littleDescription:
+              "descrição pequena do produto (até 150 caracteres)",
+            price: 123.0,
+            largeDescription:
+              "grande descrição do produto (sem limitação de caracteres)",
+            blocked: false,
+            edited: "2222-22-22 : 22:22:22",
+            deleted: "1111-11-11 11:11:11",
+          },
+          {
+            name: "Cardápio",
+            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2KCTgx2x4ob28EYajc1dXiAKYFyOzMisvNA&usqp=CAU',
             littleDescription:
               "descrição pequena do produto (até 150 caracteres)",
             price: 123.0,
@@ -419,7 +129,7 @@ export const client: iUser = {
       },
       {
         title: "Websites",
-        description: "descrição",
+        description: "Fazemos a criação de Sites e Web Sistemas com foco em facilitar, automatizar e melhorar sua empresa.",
         urlName: "websites",
         productList: [
           {
@@ -461,40 +171,40 @@ export const client: iUser = {
         ],
       },
       {
-        title: "Paid Traffic",
-        description: "descrição",
-        urlName: "ptraffic",
+        title: "Serviços Complementares",
+        description: "Aqui teremos todos os serviços por fora dos nossos sistemas e designs.",
+        urlName: "scomplementares",
         productList: [
           {
-            name: "Pacote While Light",
+            name: "WhatsApp Business",
             img: imgSf,
             littleDescription:
-              "descrição pequena do produto (até 150 caracteres)",
-            price: 123.0,
+              "Nesse serviço, criamos toda a estrutura básica e completa do que irá precisar no seu WhatsApp Business.",
+            price: 100.0,
             largeDescription:
-              "grande descrição do produto (sem limitação de caracteres)",
+              "Para fazer esse serviço precisamos que peça o formulário com todos os dados que serão necessários para a criação do WhatsApp Business.",
             blocked: false,
             edited: "2222-22-22 : 22:22:22",
             deleted: "1111-11-11 11:11:11",
           },
           {
-            name: "Pacote While Light",
+            name: "Gerenciamento de Estoque",
             img: imgSf,
             littleDescription:
-              "descrição pequena do produto (até 150 caracteres)",
+              "Está com problemas de gerenciamento de estoque e administração de pagamentos? Podemos ajudar!",
             price: 123.0,
             largeDescription:
-              "grande descrição do produto (sem limitação de caracteres)",
+              "Entre em contato para saber mais detalhes dos valores e o que os Apps podem oferecer!",
             blocked: false,
             edited: "2222-22-22 : 22:22:22",
             deleted: "1111-11-11 11:11:11",
           },
           {
-            name: "Pacote While Light",
+            name: "Atendimento Automatizado",
             img: imgSf,
             littleDescription:
-              "descrição pequena do produto (até 150 caracteres)",
-            price: 123.0,
+              "Precisa de ajuda para agilizar seus atendimentos via WhatsApp? Aqui criamos robôs para agilizar seu atendimento!",
+            price: 200.0,
             largeDescription:
               "grande descrição do produto (sem limitação de caracteres)",
             blocked: false,
@@ -504,48 +214,48 @@ export const client: iUser = {
         ],
       },
       {
-        title: "Video Editing",
-        description: "descrição",
-        urlName: "vediting",
+        title: "Atualizações",
+        description: "Aqui divulgaremos todas as  atualizações dos produtos que futuramente teremos na empresa.",
+        urlName: "atualizacoes",
         productList: [
           {
-            name: "Pacote While Light",
+            name: "Serviços Complementares",
             img: imgSf,
             littleDescription:
-              "descrição pequena do produto (até 150 caracteres)",
-            price: 123.0,
+              "Criação de um Canal completo de WhatsApp.",
+            price: 50.0,
             largeDescription:
-              "grande descrição do produto (sem limitação de caracteres)",
+              "Fazemos a criação de tudo que é necessário para ter seu próprio canal no WhatsApp, desde descrição até as fotos de perfil e o link para a divulgação.",
             blocked: false,
             edited: "2222-22-22 : 22:22:22",
             deleted: "1111-11-11 11:11:11",
           },
           {
-            name: "Pacote While Light",
+            name: "Criação e junção de Domínio",
             img: imgSf,
             littleDescription:
-              "descrição pequena do produto (até 150 caracteres)",
-            price: 123.0,
+              "Teremos o serviço de adicionar o domínio da sua empresa ao seu site.",
+            price: 100.0,
             largeDescription:
-              "grande descrição do produto (sem limitação de caracteres)",
+              "Faremos todo o processo de acrescentar o domínio comprado ao seu site. Só pediremos os dados necessários caso a compra já tenha sido feita, caso não tenha domínio, fazemos a compra por mais 40 reais.",
             blocked: false,
             edited: "2222-22-22 : 22:22:22",
             deleted: "1111-11-11 11:11:11",
           },
           {
-            name: "Pacote While Light",
+            name: "Sistema Classic",
             img: imgSf,
             littleDescription:
-              "descrição pequena do produto (até 150 caracteres)",
+              "Com esse sistema, terá um sistema completo de pedidos ou agendamentos!",
             price: 123.0,
             largeDescription:
-              "grande descrição do produto (sem limitação de caracteres)",
+              "Com esse sistema terá tudo que precisa para aumentar a velocidade e administração da sua empresa, nosso sistema receberá os pedidos e o meio de pagamento e entregará para o seu WhatsApp da empresa.",
             blocked: false,
             edited: "2222-22-22 : 22:22:22",
             deleted: "1111-11-11 11:11:11",
           },
         ],
-      },
+      }
     ],
     colorImageEdit: {
       colors: {},

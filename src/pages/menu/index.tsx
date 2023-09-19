@@ -12,15 +12,9 @@ export default function Menu() {
     <>
       <NavBar />
       <StyledMenuPage>
-        <h1>Quem somos</h1>
+        <h1>Quem somos?</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum
+          Na Digital While, estamos comprometidos em impulsionar o sucesso do seu negócio. Com nossa experiência em Web Sistemas, estamos prontos para elevar o desempenho e o lucro da sua empresa a níveis surpreendentes. Sabemos que a competitividade é intensa nos dias de hoje, e é por isso que oferecemos soluções inovadoras para mantê-lo à frente da curva e do mercado.
         </p>
         <ul className="ul--team">
           {userInfo.team.map((employee, index) => (
