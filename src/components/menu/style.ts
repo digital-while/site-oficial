@@ -58,6 +58,8 @@ export const Menu = styled("ul")<{ open: boolean }>`
 
 export const SubMenu = styled("ul")<{ open: boolean }>`
   display: ${({ open }) => (open ? "block" : "none")};
+  /* background-image: linear-gradient(black, #050a30); */
+  background-color: #050a30;
 
   @media screen and (min-width: 960px) {
     position: absolute;
