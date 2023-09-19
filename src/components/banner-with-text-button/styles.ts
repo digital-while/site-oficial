@@ -34,7 +34,7 @@ export const BannerContent = styled.div`
 `;
 
 export const BoxCenter = styled.div`
-  height: 38vh;
+  height: 30vh;
   justify-content: space-between;
   display: flex;
   flex-direction: column;

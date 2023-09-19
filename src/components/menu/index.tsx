@@ -80,14 +80,6 @@ const NavBar = () => {
                 Contatos
               </MenuItemLink>
             </MenuItem>
-            <MenuItem>
-              <MenuItemLink
-                onClick={() => setShowMobileMenu(!showMobileMenu)}
-                href="/"
-              >
-                Atualizações
-              </MenuItemLink>
-            </MenuItem>
           </Menu>
         </Wrapper>
       </Container>
