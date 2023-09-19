@@ -5,16 +5,20 @@ export const StyledCarousel = styled.ul`
 
   .div--wrapper-itens {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     gap: 20px;
   }
 
   .carousel-indicators {
-    margin-bottom: -60px;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 0;
   }
 
-  .carousel-control-next, .carousel-control-prev {
+  .carousel-control-next,
+  .carousel-control-prev {
     width: auto;
   }
 `;
