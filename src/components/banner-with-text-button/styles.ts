@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-import image from '../../assets/fundo-digital-while.jpg';
+import image from "../../assets/fundo-digital-while.jpg";
 
 export const BannerWrapper = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-image: url(${image});
   background-size: cover;
   display: flex;
@@ -26,11 +26,11 @@ export const BannerWrapper = styled.div`
 `;
 
 export const BannerContent = styled.div`
-    max-width: 760px;
-    margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
-    position: relative;
+  max-width: 760px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
 `;
 
 export const BoxCenter = styled.div`

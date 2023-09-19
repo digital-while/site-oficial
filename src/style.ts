@@ -15,6 +15,6 @@ export const Container = styled.div`
 
 export const BodyBack = styled.div`
   width: 100vw;
-  height: 100vh;
-  background-image: linear-gradient(black,#050A30);
+  min-height: 100vh;
+  background-image: linear-gradient(black, #050a30);
 `;

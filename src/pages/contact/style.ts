@@ -3,7 +3,7 @@ import image from "../../assets/fundo-digital-while.jpg";
 
 export const StyleContactPage = styled.section`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-image: url(${image});
   background-size: cover;
   display: flex;
