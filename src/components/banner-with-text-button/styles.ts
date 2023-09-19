@@ -32,3 +32,11 @@ export const BannerContent = styled.div`
     padding-right: 16px;
     position: relative;
 `;
+
+export const BoxCenter = styled.div`
+  height: 38vh;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
