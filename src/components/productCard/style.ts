@@ -73,5 +73,10 @@ export const StyledProductCard = styled.div<iStyledProductCardProps>`
     align-items: center;
     text-align: center;
     padding: 16px;
+    overflow-y: scroll;
+  }
+
+  .text{
+    height: 100%;
   }
 `;

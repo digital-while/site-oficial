@@ -16,18 +16,17 @@ export const ProductCard = ({ product }: iProductCardProps) => {
       onClick={handleClick}
       backview={view}
     >
-
       <div className="flip-card">
         <div className="flip-card-inner">
           <div className="flip-card-front">
-              <img src={product.img} alt={product.name} />
-              <div className="flip-card-desc">
-                <h3 className="h5 bold">{product.name}</h3>
-                <p className="em">{product.littleDescription}</p>
-              </div>
+            <img src={product.img} alt={product.name} />
+            <div className="flip-card-desc">
+              <h3 className="h5 bold">{product.name}</h3>
+              <p className="em">{product.littleDescription}</p>
+            </div>
           </div>
           <div className="flip-card-back">
-            <p>{product.largeDescription}</p>
+            <p className="text">{product.largeDescription}</p>
           </div>
         </div>
       </div>
